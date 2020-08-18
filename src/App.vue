@@ -2,16 +2,22 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <Custom/>
+    <Render/>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import HelloWorld from './components/HelloWorld.vue';
+import Custom from "./components/Custom.vue"
+import Render from "./components/Render"
 
 @Component({
   components: {
     HelloWorld,
+    Custom,
+    Render
   },
 })
 export default class App extends Vue {}
